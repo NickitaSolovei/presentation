@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>What is a Pattern?</h1>
+					<p>A pattern is a reusable solution that can be applied to commonly occurring problems in
+						 software design - in our case - in writing JavaScript web applications.</p>
+				</section>
+
+				<section>
+					<p>Design patterns have three main benefits:</p>
+					<ul>
+						<li>Patterns are proven solutions</li>
+						<li>Patterns can be easily reused</li>
+						<li>Patterns can be expressive</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Categories of Design Patterns</h2>
+				</section>
+
+				<section>
+					<h3>Creational Design Patterns</h3>
+					<p>Creational design patterns focus on handling object creation mechanisms where objects
+						 are created in a manner suitable for the situation we're working in.</p>
+					<ul>
+						<li>Abstract factory</li>
+						<li>Builder</li>
+						<li>Factory method</li>
+						<li>Prototype</li>
+						<li>Singleton</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Structural Design Patterns</h3>
+					<p>Structural patterns are concerned with object composition and typically identify
+						 simple ways to realize relationships between different objects. </p>
+					<ul>
+						<li>Adapter</li>
+						<li>Bridge</li>
+						<li>Composite</li>
+						<li>Decorator</li>
+						<li>Facade</li>
+						<li>Flyweight</li>
+						<li>Proxy</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Behavioral Design Patterns</h3>
+					<p>Behavioral patterns focus on improving or streamlining the communication between
+						 disparate objects in a system.</p>
+					<ul>
+						<li>Command</li>
+						<li>Interpreter</li>
+						<li>Iterator</li>
+						<li>Mediator</li>
+						<li>Memento</li>
+						<li>Observer</li>
+						<li>State</li>
+						<li>Strategy</li>
+					</ul>
+				</section>
+
+				<section>
+					<section>
+						<h4>Factory Pattern</h4>
+						<p>Factory Pattern is class-based creational pattern. In this, we provide a generic
+							interface that delegates the responsibility of object instantiation to its subclasses.</p>
+					</section>
+					<section>
+						<img src=".//img/FactoryPattern.png" height=500px>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h4>Singleton Pattern</h4>
+						<p>Singleton is a special creational design pattern where only one instance of a class can
+							exist.</p>
+					</section>
+					<section>
+						<img src=".//img/SingletonPattern1.png" height=400px>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h4>Flyweight Pattern</h4>
+						<p>This is a structural design pattern focused on efficient data sharing through
+							fine-grained objects. It is used for efficiency and memory conservation purposes.</p>
+					</section>
+					<section>
+						<img src=".//img/Flyweight.png" height=500px>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h4>Chain of Responsibility Pattern</h4>
+						<p>This is a behavioural design pattern that provides a chain of loosely coupled
+							objects. Each of these objects can choose to act on or handle the request of the client.</p>
+					</section>
+					<section>
+						<img src=".//img/ChainOfResponsibilityPattern.png" height=500px>
+					</section>
+				</section>
+
+				<section>
+					<h2>Conclusion</h2>
+					<p>Design patterns are crucial to software engineering and can be very helpful in solving common
+						 problems.</p>
+				</section>	
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
